@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8v3lfD33LE23p0G5wkwZzLhCI5u7n19tIZR5kahI3PQ=",
+  "Source": "SmartSurveys.Api",
+  "BasePath": "_content/SmartSurveys.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

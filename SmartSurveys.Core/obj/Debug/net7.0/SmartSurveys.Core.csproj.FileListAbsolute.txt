@@ -1,0 +1,12 @@
+/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Core/bin/Debug/net7.0/SmartSurveys.Core.deps.json
+/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Core/bin/Debug/net7.0/SmartSurveys.Core.dll
+/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Core/bin/Debug/net7.0/SmartSurveys.Core.pdb
+/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Core/obj/Debug/net7.0/SmartSurveys.Core.csproj.AssemblyReference.cache
+/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Core/obj/Debug/net7.0/SmartSurveys.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Core/obj/Debug/net7.0/SmartSurveys.Core.AssemblyInfoInputs.cache
+/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Core/obj/Debug/net7.0/SmartSurveys.Core.AssemblyInfo.cs
+/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Core/obj/Debug/net7.0/SmartSurveys.Core.csproj.CoreCompileInputs.cache
+/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Core/obj/Debug/net7.0/SmartSurveys.Core.dll
+/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Core/obj/Debug/net7.0/refint/SmartSurveys.Core.dll
+/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Core/obj/Debug/net7.0/SmartSurveys.Core.pdb
+/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Core/obj/Debug/net7.0/ref/SmartSurveys.Core.dll
