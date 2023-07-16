@@ -23,7 +23,12 @@ public static class SurveyResponsesApi
         
         app.MapPost("/survey-responses", async (ISurveyResponseService surveyResponseService, SurveyResponseDto surveyResponseDto) =>
         {
-            await surveyResponseService.CreateAsync(surveyResponseDto);
+            var result = await surveyResponseService.CreateAsync(surveyResponseDto);
+            
+            if (result.IsFailure)
+            {
+                return Results.BadRequest(result.Errors);
+            }
 
             return Results.Created($"/survey-responses/{surveyResponseDto.Id}", surveyResponseDto);
         }).WithName("CreateSurveyResponse").WithOpenApi();
