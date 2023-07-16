@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "TkRHI3v0vCe6jIwbFnX1wijZq3miRqLIIXmnx3Lue895v+QnGnvwXCamBVgXkyJXfI5Uqltkxf3bHPVXLdIsMA==",
+  "dgSpecHash": "l4gWNkS+CE6WjExfBP9AwW67FYmR8wWQI9EBZ3yPy7Okjlc+LhyHJ5i/zPvv4BkWVTduRqrLkXqW2cCIQJchjQ==",
   "success": true,
   "projectFilePath": "/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Core/SmartSurveys.Core.csproj",
   "expectedPackageFiles": [
     "/Users/maciejnet/.nuget/packages/dapper/2.0.143/dapper.2.0.143.nupkg.sha512",
     "/Users/maciejnet/.nuget/packages/dapper.contrib/2.0.78/dapper.contrib.2.0.78.nupkg.sha512",
+    "/Users/maciejnet/.nuget/packages/fluentvalidation/11.6.0/fluentvalidation.11.6.0.nupkg.sha512",
     "/Users/maciejnet/.nuget/packages/mapster/7.3.0/mapster.7.3.0.nupkg.sha512",
     "/Users/maciejnet/.nuget/packages/mapster.core/1.2.0/mapster.core.1.2.0.nupkg.sha512",
     "/Users/maciejnet/.nuget/packages/mapster.dependencyinjection/1.0.0/mapster.dependencyinjection.1.0.0.nupkg.sha512",

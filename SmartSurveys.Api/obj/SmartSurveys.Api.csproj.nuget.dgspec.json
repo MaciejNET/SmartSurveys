@@ -116,6 +116,10 @@
               "target": "Package",
               "version": "[2.0.78, )"
             },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.6.0, )"
+            },
             "Mapster": {
               "target": "Package",
               "version": "[7.3.0, )"

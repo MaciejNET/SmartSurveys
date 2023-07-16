@@ -12,7 +12,16 @@ internal class SurveyRepository : ISurveyRepository
     {
         _connection = dbContext.CreateConnection();
     }
-    
+
+    public async Task<bool> ExistsAsync(int id)
+    {
+        var query = "SELECT EXISTS(SELECT 1 FROM surveys WHERE id = @id)";
+        
+        var exists = await _connection.ExecuteScalarAsync<bool>(query, new { id });
+        
+        return exists;
+    }
+
     public async Task<Survey> GetAsync(int id)
     {
         var query = "SELECT s.*, q.* FROM surveys AS s LEFT JOIN questions AS q ON s.id = q.survey_id WHERE s.id = @id";

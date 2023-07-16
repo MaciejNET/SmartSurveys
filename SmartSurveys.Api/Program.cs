@@ -9,7 +9,6 @@ builder.Services.AddCore();
 
 var app = builder.Build();
 
-
 app.MapControllers();
 
 app.UseSurveysApi();

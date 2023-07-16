@@ -23,7 +23,12 @@ public static class SurveysApi
         
         app.MapPost("/surveys", async (ISurveyService surveyService, SurveyDetailsDto surveyDto) =>
         {
-            await surveyService.CreateAsync(surveyDto);
+            var result = await surveyService.CreateAsync(surveyDto);
+            
+            if (result.IsFailure)
+            {
+                return Results.BadRequest(result.Errors);
+            }
 
             return Results.Created($"/surveys/{surveyDto.Id}", surveyDto);
         }).WithName("CreateSurvey").WithOpenApi();
@@ -32,14 +37,24 @@ public static class SurveysApi
         {
             surveyDto.Id = id;
             
-            await surveyService.UpdateAsync(surveyDto);
+            var result = await surveyService.UpdateAsync(surveyDto);
+            
+            if (result.IsFailure)
+            {
+                return Results.BadRequest(result.Errors);
+            }
 
             return Results.Ok();
         }).WithName("UpdateSurvey").WithOpenApi();
         
         app.MapDelete("/surveys/{id}", async (ISurveyService surveyService, int id) =>
         {
-            await surveyService.DeleteAsync(id);
+            var result = await surveyService.DeleteAsync(id);
+            
+            if (result.IsFailure)
+            {
+                return Results.BadRequest(result.Errors);
+            }
 
             return Results.Ok();
         }).WithName("DeleteSurvey").WithOpenApi();

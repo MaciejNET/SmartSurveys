@@ -3,9 +3,8 @@ using MapsterMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using SmartSurveys.Core.DAL;
-using SmartSurveys.Core.DTO;
-using SmartSurveys.Core.Entities;
 using SmartSurveys.Core.Services;
+using SmartSurveys.Core.Validators;
 
 namespace SmartSurveys.Core;
 
@@ -22,6 +21,12 @@ public static class Extensions
         services.AddScoped<ISurveyService, SurveyService>();
         services.AddScoped<ISurveyResponseService, SurveyResponseService>();
 
+        services.AddTransient<SurveyDtoValidator>();
+        services.AddTransient<SurveyDetailsDtoValidator>();
+        services.AddTransient<QuestionDtoValidator>();
+        services.AddTransient<SurveyResponseDtoValidator>();
+        services.AddTransient<QuestionResponseDtoValidator>();
+        
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         
