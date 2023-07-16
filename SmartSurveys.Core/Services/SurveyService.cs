@@ -85,6 +85,7 @@ internal class SurveyService : ISurveyService
         }
         
         await _surveyRepository.DeleteAsync(id);
+        
         return Result.Success();
     }
 }

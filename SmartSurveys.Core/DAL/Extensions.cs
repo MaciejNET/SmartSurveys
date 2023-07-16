@@ -10,7 +10,7 @@ internal static class Extensions
     {
         services.AddTypeHandlers();
         services.AddScoped<SmartSurveyDbContext>();
-
+        services.AddHostedService<DatabaseInitializer>();
         services.AddScoped<ISurveyRepository, SurveyRepository>();
         services.AddScoped<ISurveyResponseRepository, SurveyResponseRepository>();
         

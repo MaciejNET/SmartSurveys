@@ -5,7 +5,7 @@ using Npgsql;
 
 namespace SmartSurveys.Core.DAL;
 
-public class SmartSurveyDbContext
+internal class SmartSurveyDbContext
 {
     private readonly IConfiguration _configuration;
 
@@ -14,9 +14,17 @@ public class SmartSurveyDbContext
         _configuration = configuration;
     }
     
-    public IDbConnection CreateConnection()
+    internal IDbConnection CreateConnection()
     {
         var connectionString = _configuration.GetSection("postgres")["connectionString"];
+        var connection = new NpgsqlConnection(connectionString);
+        connection.Open();
+        return connection;
+    }
+    
+    internal IDbConnection CreateTestConnection()
+    {
+        var connectionString = _configuration.GetSection("postgres")["testConnectionString"];
         var connection = new NpgsqlConnection(connectionString);
         connection.Open();
         return connection;

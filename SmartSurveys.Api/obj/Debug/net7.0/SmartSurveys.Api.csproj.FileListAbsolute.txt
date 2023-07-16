@@ -46,3 +46,4 @@
 /Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Api/bin/Debug/net7.0/Mapster.DependencyInjection.dll
 /Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Api/bin/Debug/net7.0/Swashbuckle.AspNetCore.Annotations.dll
 /Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Api/bin/Debug/net7.0/Dapper.Contrib.dll
+/Users/maciejnet/Projects/SmartSurveys/SmartSurveys.Api/bin/Debug/net7.0/FluentValidation.dll
